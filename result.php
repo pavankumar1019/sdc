@@ -12,19 +12,19 @@ if ($conn->connect_error) {
 }
 
 function language($code) {
-if($code=1){
+if($code==1){
   echo "KANNADA";
 }
-if($code=2){
+if($code==2){
   echo "ENGLISH";
 }
-if($code=3){
+if($code==3){
   echo "HINDI";
 }
-if($code=3){
+if($code==8){
   echo "URDU";
 }
-if($code=3){
+if($code==9){
   echo "SANSKRIT";
 }
 }
