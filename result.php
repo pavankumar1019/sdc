@@ -26,14 +26,6 @@ if($code==9){
 }
 };
 
-
-$sql = "SELECT * FROM bpet_ist_puc_result where reg_no='".$_POST['reg']."'";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    subj($row['class_code']);
 function subj($id) {
 if($id==1){
   $s1="BASIC MATHS";
@@ -66,6 +58,14 @@ if($id==5){
   $s="BIOLOGY";
 }
 }
+
+$sql = "SELECT * FROM bpet_ist_puc_result where reg_no='".$_POST['reg']."'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+    subj($row['class_code']);
    ?>
    <table style="width:100%">
   <tr>
