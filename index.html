@@ -33,7 +33,7 @@
 
     <!-- Login Form -->
     <!-- onkeypress="return isNumber(event)" -->
-    <form>
+    <form id="foo" method="post"> 
       <input type="text" id="login" class="fadeIn second" name="login" placeholder="Register Number">
       <input type="submit" class="fadeIn fourth" value="Search">
     </form>
@@ -76,6 +76,27 @@
     }
     return true;
 }
+$("#foo").submit(function(event) {
+    var ajaxRequest;
+
+    /* Stop form from submitting normally */
+    event.preventDefault();
+    var values = $(this).serialize();
+
+$.ajax({
+       url: "result.php",
+       type: "post",
+       data: values ,
+       success: function (response) {
+
+          // You will get response from your PHP page (what you echo or print)
+       },
+       error: function(jqXHR, textStatus, errorThrown) {
+          console.log(textStatus, errorThrown);
+       }
+   });
+
+})
 
 </script>
 </body>
