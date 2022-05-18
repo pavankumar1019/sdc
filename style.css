@@ -17,7 +17,10 @@ html {
     font-weight: 400;
   }
   table, th, td {
-    border:1px solid black;
+    border:2px solid black;
+    border-style: double;
+    background-color: white !important;
+
   }
   h2 {
     text-align: center;
