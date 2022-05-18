@@ -30,6 +30,7 @@ $s2;
 $s3;
 $s4;
 function subj($id) {
+  global $s1,$s2,$s3,$s4;
 if($id==1){
   $s1="BASIC MATHS";
   $s2=" BUSINESS STUDIES";
