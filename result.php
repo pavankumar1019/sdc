@@ -152,7 +152,7 @@ if ($result->num_rows > 0) {
    <?php
   }
 } else {
-  echo "Not Found Result Please Contact Office ";
+  echo "Not Found Result Please SDC-College Contact Office ";
 }
 
 $conn->close();
