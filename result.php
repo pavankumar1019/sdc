@@ -62,7 +62,27 @@ if($id==5){
   $s="BIOLOGY";
 }
 }
+function getclass($total){
+  $average=($total/600)*100;
+  if ($average>=60)
+{
+echo "<p style='color:blue;'>First Class ".round($average, 2)."</p>";
+}
+else if($average>=45)
+{
+echo "<p style='color:blue;'>Second Class ".round($average, 2)."</p>";
+}
+else if($average>=35)
+{
+echo "<p style='color:blue;'>Pass ".round($average, 2)."</p>";
+}
+else
+{
+echo "<p style='color:red;'>Failed ".round($average, 2)."</p>";
+}
 
+
+}
 $sql = "SELECT * FROM bpet_ist_puc_result where reg_no='".$_POST['reg']."'";
 $result = $conn->query($sql);
 
