@@ -73,13 +73,13 @@ if ($result->num_rows > 0) {
    ?>
    <table style="width:100%">
   <tr>
-    <th>Register number : </th>
-    <th colspan="2">Name :</th>
+    <th>Register number : <?php echo $row['reg_no'];?></th>
+    <th colspan="2">Name : <?php echo $row['student_name'];?></th>
 
   </tr>
   <tr>
-    <td colspan="3"> Father Name : <br>
-    Mother Name :
+    <td colspan="3"> Father Name :  <?php echo $row['father_name'];?><br>
+    Mother Name : <?php echo $row['mother_name'];?>
     </td>
    
   </tr>
