@@ -92,7 +92,7 @@ if ($result->num_rows > 0) {
     <td colspan="2" style="text-align: center;"><?php echo $row['']?></td>
   </tr>
   <tr>
-    <td ><b><?php echo $s1;?></b></td>
+    <td ><b><?php echo $row['class_code'];?></b></td>
     <td colspan="2" style="text-align: center;"><?php echo $row['s1']?></td>
   </tr>
   <tr>
