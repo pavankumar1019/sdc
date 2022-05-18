@@ -11,7 +11,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM bpet_ist_puc_result";
+$sql = "SELECT * FROM bpet_ist_puc_result where reg_no='".$_POST['reg']."'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
