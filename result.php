@@ -103,7 +103,7 @@ if ($result->num_rows > 0) {
   </tr>
   <tr>
 
-    <td colspan="3"> <b> Name <?php echo $row['student_name'];?></b> <br>
+    <td colspan="3"> <b style="color:blue;"> Name: &nbsp; &nbsp; &nbsp; <?php echo $row['student_name'];?></b> <br>
      Father Name :  <?php echo $row['father_name'];?><br>
     Mother Name : <?php echo $row['mother_name'];?>
     </td>
