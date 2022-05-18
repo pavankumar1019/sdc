@@ -25,13 +25,16 @@ if($code==9){
   echo "SANSKRIT";
 }
 };
-
+$s1;
+$s2;
+$s3;
+$s4;
 function subj($id) {
 if($id==1){
   $s1="BASIC MATHS";
   $s2=" BUSINESS STUDIES";
   $s3="ACCOUNTANCY";
-  echo "STATISTICS";
+  $s="STATISTICS";
 }
 if($id==2){
   $s1="ECONOMICS";
