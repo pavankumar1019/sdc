@@ -118,29 +118,10 @@ if ($result->num_rows > 0) {
   <tr style="font-size:30px;font-weight:bold;">
     <td colspan="3" style="text-align:center;"><?php getclass($row['g']);?></td>
   </tr>
+
+
 </table>
    <?php
-    function getclass($total){
-      $average=($total/600)*100;
-      if ($average>=60)
-{
-  echo "<p style='color:blue;'>First Class ".round($average, 2)."</p>";
-}
-else if($average>=45)
-{
-  echo "<p style='color:blue;'>Second Class ".round($average, 2)."</p>";
-}
-else if($average>=35)
-{
-  echo "<p style='color:blue;'>Pass ".round($average, 2)."</p>";
-}
-else
-{
-  echo "<p style='color:red;'>Failed ".round($average, 2)."</p>";
-}
-    
-  
-    }
   }
 } else {
   echo "Not Found Result Contact Office ";
