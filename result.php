@@ -90,6 +90,22 @@ if ($result->num_rows > 0) {
     <td ><b>ENGLISH</b></td>
     <td colspan="2" style="text-align: center;"><?php echo $row['']?></td>
   </tr>
+  <tr>
+    <td ><b><?php echo $s1;?></b></td>
+    <td colspan="2" style="text-align: center;"><?php echo $row['s1']?></td>
+  </tr>
+  <tr>
+    <td ><b><?php echo $s2;?></b></td>
+    <td colspan="2" style="text-align: center;"><?php echo $row['s2']?></td>
+  </tr>
+  <tr>
+    <td ><b><?php echo $s3;?></b></td>
+    <td colspan="2" style="text-align: center;"><?php echo $row['s3']?></td>
+  </tr>
+  <tr>
+    <td ><b><?php echo $s4;?></b></td>
+    <td colspan="2" style="text-align: center;"><?php echo $row['s4']?></td>
+  </tr>
 
 
 </table>
