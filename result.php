@@ -68,7 +68,7 @@ function getclass($total){
 {
 echo "<p style='color:blue;'>Distinction ".round($average, 2)."%</p>";
 }
-  if ($average>=60)
+  else if ($average>=60)
 {
 echo "<p style='color:blue;'>First Class ".round($average, 2)."%</p>";
 }
