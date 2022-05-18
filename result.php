@@ -145,7 +145,9 @@ if ($result->num_rows > 0) {
     <td colspan="3" style="text-align:center;"><?php getclass($row['g']);?></td>
   </tr>
 
-
+<tr>
+  <td colspan="3"><button onClick="window.location.reload();">Back</button></td>
+</tr>
 </table>
    <?php
   }
