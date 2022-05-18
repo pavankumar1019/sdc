@@ -15,9 +15,6 @@ function language($code) {
 if($code==1){
   echo "KANNADA";
 }
-if($code==2){
-  echo "ENGLISH";
-}
 if($code==3){
   echo "HINDI";
 }
@@ -27,7 +24,41 @@ if($code==8){
 if($code==9){
   echo "SANSKRIT";
 }
+};
+subj($row['class_code']);
+function subj($id) {
+if($id==1){
+  $s1="BASIC MATHS";
+  $s2=" BUSINESS STUDIES";
+  $s3="ACCOUNTANCY";
+  $s="STATISTICS";
 }
+if($id==2){
+  $s1="ECONOMICS";
+  $s2="BUSINESS STUDIES";
+  $s3="ACCOUNTANCY";
+  $s="COMPUTER SCIENCE";
+}
+if($id==3){
+  $s1="ECONOMICS";
+  $s2="BUSINESS STUDIES";
+  $s3="ACCOUNTANCY";
+  $s="STATISTICS";
+}
+if($id==4){
+  $s1="PHYSICS";
+  $s2="CHEMISTRY";
+  $s3="MATHEMATICS";
+  $s="COMPUTER SCIENCE";
+}
+if($id==5){
+  $s1="PHYSICS";
+  $s2="CHEMISTRY";
+  $s3="MATHEMATICS";
+  $s="BIOLOGY";
+}
+}
+
 $sql = "SELECT * FROM bpet_ist_puc_result where reg_no='".$_POST['reg']."'";
 $result = $conn->query($sql);
 
@@ -53,8 +84,13 @@ if ($result->num_rows > 0) {
   </tr>
   <tr>
     <td ><b><?php echo language($row['lang_code'])?></b></td>
-    <td colspan="2" style="text-align: center;">40</td>
+    <td colspan="2" style="text-align: center;"><?php echo $row['']?></td>
   </tr>
+  <tr>
+    <td ><b>ENGLISH</b></td>
+    <td colspan="2" style="text-align: center;"><?php echo $row['']?></td>
+  </tr>
+
 
 </table>
    <?php
