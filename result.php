@@ -118,9 +118,6 @@ if ($result->num_rows > 0) {
   <tr style="font-size:30px;font-weight:bold;">
     <td colspan="3" style="text-align:center;"><?php getclass($row['g']);?></td>
   </tr>
-
- 
-
 </table>
    <?php
     function getclass($total){
