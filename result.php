@@ -28,9 +28,9 @@ if($code==9){
 $s1;
 $s2;
 $s3;
-$s4;
+$s;
 function subj($id) {
-  global $s1,$s2,$s3,$s4;
+  global $s1,$s2,$s3,$s;
 if($id==1){
   $s1="BASIC MATHS";
   $s2=" BUSINESS STUDIES";
@@ -89,11 +89,11 @@ if ($result->num_rows > 0) {
   </tr>
   <tr>
     <td ><b><?php echo language($row['lang_code'])?></b></td>
-    <td colspan="2" style="text-align: center;"><?php echo $row['']?></td>
+    <td colspan="2" style="text-align: center;"><?php echo $row['language']?></td>
   </tr>
   <tr>
     <td ><b>ENGLISH</b></td>
-    <td colspan="2" style="text-align: center;"><?php echo $row['']?></td>
+    <td colspan="2" style="text-align: center;"><?php echo $row['english']?></td>
   </tr>
   <tr>
     <td ><b><?php echo $s1;?></b></td>
@@ -108,8 +108,12 @@ if ($result->num_rows > 0) {
     <td colspan="2" style="text-align: center;"><?php echo $row['s3']?></td>
   </tr>
   <tr>
-    <td ><b><?php echo $s4;?></b></td>
+    <td ><b><?php echo $s;?></b></td>
     <td colspan="2" style="text-align: center;"><?php echo $row['s4']?></td>
+  </tr>
+  <tr style="font-size:30px;font-weight:bold;">
+    <td ><b>TOTAL</td>
+    <td colspan="2" style="text-align: center;"><?php echo $row['g']?></td>
   </tr>
 
 
