@@ -148,7 +148,7 @@ if ($result->num_rows > 0) {
    <?php
   }
 } else {
-  echo "Not Found Result Contact Office ";
+  echo "Not Found Result Please Contact Office ";
 }
 
 $conn->close();
