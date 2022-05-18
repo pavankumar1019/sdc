@@ -146,7 +146,7 @@ if ($result->num_rows > 0) {
   </tr>
 
 <tr>
-  <td colspan="3"><button onClick="window.location.reload();">Back</button></td>
+  <td colspan="3"><button onClick="window.location.reload();" class="btn btn-primary">Back</button></td>
 </tr>
 </table>
    <?php
