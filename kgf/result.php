@@ -87,7 +87,7 @@ echo "<p style='color:red;'>Failed ".round($average, 2)."%</p>";
 
 
 }
-$sql = "SELECT * FROM bpet_ist_puc_result where reg_no='".$_POST['reg']."'";
+$sql = "SELECT * FROM kgf_ist_puc_result where reg_no='".$_POST['reg']."'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -109,9 +109,7 @@ if ($result->num_rows > 0) {
   <tr>
 
     <td colspan="3"> <b style="color:blue;"> Name: &nbsp; &nbsp; &nbsp; <?php echo $row['student_name'];?></b> <br>
-     Father Name :  <?php echo $row['father_name'];?><br>
-    Mother Name : <?php echo $row['mother_name'];?>
-    </td>
+        </td>
    
   </tr>
   <tr style="text-align: center; font-size: 20px;font-weight: bold;">
