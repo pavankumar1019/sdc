@@ -97,7 +97,12 @@ if ($result->num_rows > 0) {
    ?>
    <table style="width:100%">
   <tr>
-    <th colspan="3">Register number : <?php echo $row['reg_no'];?></th>
+    <th colspan="3" style="text-align:center;">SDC-Independent PU College , KGF <br> MM0273</th>
+ 
+
+  </tr>
+  <tr>
+    <td colspan="3">Register number : <?php echo $row['reg_no'];?></td>
  
 
   </tr>
